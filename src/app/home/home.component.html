@@ -1,0 +1,8 @@
+<h2>
+    Heroes
+</h2>
+<div>
+    <app-hero-list [heroes]="HEROES" 
+                   (selectionHero)="onSelected($event);"></app-hero-list>
+    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+</div>
